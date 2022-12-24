@@ -8,6 +8,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css'%}" />
     <title>Document</title>
+    <style>
+          .center {
+    text-align: center;
+    background-color: rgb(87, 254, 223);
+    width: 48%;
+    margin: auto;
+  }
+
+  .center_or {
+    text-align: center;
+
+    margin: auto;
+    color: aliceblue;
+  }
+
+  .nav_bar {
+    width: 100vw;
+  /* height: 10vh;*/
+    height: max(10vh, 100px);
+    background-color: rgb(191, 49, 234);
+    display : flex;
+    align-items : center;
+  }
+  
+  *{
+    margin:0px;
+    padding:8px;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: sans-serif;
+    padding-top: 150px;
+    background:rgb(27, 27, 27);
+    /* opacity: 90%; */
+  }
+  .main{
+    margin: auto;
+    width: 50%;
+  }
+  .main input,button{
+    width:75%;
+    border:2px solid white;
+    border-right:0px;
+    font-size: 18px;
+    padding:12px;
+    background-color: transparent;
+    color:white;
+  }
+  .main input:hover{
+    opacity: .8;
+  }
+  .main button{
+    width:25%;
+    background-color: #eee;
+    color:black;
+    transition: all 0.3s;
+    float: right;
+    border-left:0px;
+  }
+  .main button:hover{
+    opacity: .8;
+  }
+    </style>
 
 </head>
 <body>
