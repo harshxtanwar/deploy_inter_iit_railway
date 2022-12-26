@@ -94,8 +94,8 @@
         <h2>Add new link to your database</h2>
     </div>
     <div class="main">
-        <form method="post" action="/post_input">
-        {% csrf_token%}
+        <form method="get" action="/post_input">
+<!--         {% csrf_token%} -->
         <input type="text" name="input" placeholder="Insert new link" id="input">
         <button type="submit" onclick="alert('Your database has been updated')" >ENTER</button>
     </form> 
