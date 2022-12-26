@@ -929,7 +929,10 @@ def query_searchbar(request):
                 result.append({'link':i})
 
             hello = re.split('//|/|-|:|@|\.|\,', i)
-            if search_text in hello:
+            helllo = []
+            for y in hello:
+                helllo.append(y.lower())
+            if search_text.lower() in helllo:
                 result.append({'link':i})
             
 
