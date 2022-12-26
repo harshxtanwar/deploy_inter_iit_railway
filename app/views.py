@@ -942,9 +942,9 @@ def query_searchbar(request):
 
 def post_data(request):
 
-    if request.method == "POST":
-        print(request.POST.get('input'))
-        listt.append(request.POST.get('input'))
+    if request.method == "GET":
+        print(request.GET.get('input'))
+        listt.append(request.GET.get('input'))
     
     
     he = {1 : "coming from backend"}
